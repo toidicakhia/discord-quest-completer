@@ -344,13 +344,13 @@ const CONFIG = {
         try {
             const req = webpackChunkdiscord_app.push([[Symbol()], {}, r => r]); webpackChunkdiscord_app.pop();
             const found = {
-                StreamStore: Object.values(req.c).find(x => x?.exports?.Z?.__proto__?.getStreamerActiveStreamMetadata)?.exports?.Z,
-                RunStore: Object.values(req.c).find(x => x?.exports?.ZP?.getRunningGames)?.exports?.ZP,
-                QuestStore: Object.values(req.c).find(x => x?.exports?.Z?.__proto__?.getQuest)?.exports?.Z,
-                ChanStore: Object.values(req.c).find(x => x?.exports?.Z?.__proto__?.getAllThreadsForParent)?.exports?.Z,
-                GuildChanStore: Object.values(req.c).find(x => x?.exports?.ZP?.getSFWDefaultChannel)?.exports?.ZP,
-                Dispatcher: Object.values(req.c).find(x => x?.exports?.Z?.__proto__?.flushWaitQueue)?.exports?.Z,
-                API: Object.values(req.c).find(x => x?.exports?.tn?.get)?.exports?.tn
+                StreamStore: Object.values(req.c).find(x => x?.exports?.A?.__proto__?.getStreamerActiveStreamMetadata)?.exports?.A,
+                RunStore: Object.values(req.c).find(x => x?.exports?.Ay?.getRunningGames)?.exports?.Ay,
+                QuestStore: Object.values(req.c).find(x => x?.exports?.A?.__proto__?.getQuest)?.exports?.A,
+                ChanStore: Object.values(req.c).find(x => x?.exports?.A?.__proto__?.getAllThreadsForParent)?.exports?.A,
+                GuildChanStore: Object.values(req.c).find(x => x?.exports?.Ay?.getSFWDefaultChannel)?.exports?.Ay,
+                Dispatcher: Object.values(req.c).find(x => x?.exports?.h?.__proto__?.flushWaitQueue)?.exports?.h,
+                API: Object.values(req.c).find(x => x?.exports?.Bo?.get)?.exports?.Bo
             };
             if (!found.QuestStore || !found.API) throw "Core modules not found";
             Mods = found;
